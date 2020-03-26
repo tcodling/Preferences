@@ -25,7 +25,7 @@
         "name": "Marni",
         "drink": "Camomile",
         "sugars": 0,
-        "Milk": 0,
+        "milk": 0,
         "image": "/images/default.jpg"
     }
 ]

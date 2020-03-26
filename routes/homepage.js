@@ -15,7 +15,7 @@ router.post('/', (req, res) => {
     const newPerson = {
         name: req.body.name,
         drink: req.body.drink,
-        sugar: req.body.sugars,
+        sugars: req.body.sugars,
         milk: req.body.milks
     }
     data.people.push(newPerson)
