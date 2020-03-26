@@ -4,9 +4,9 @@ const router = express.Router()
 
 const data = require('../data.json')
 
-router.get('/', (req, res) => {
-    const id = req.params.id
-    const people = data.people.find(item => item.id == id)
+router.get('/:name', (req, res) => {
+    const name = req.params.name
+    const people = data.people.find(item => item.name === name)
 
     const viewData = {
         name: people.name,
