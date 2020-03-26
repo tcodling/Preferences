@@ -14,6 +14,7 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     const newPerson = {
         name: req.body.name,
+        image: "/images/default.jpg",
         drink: req.body.drink,
         sugars: req.body.sugars,
         milk: req.body.milks
