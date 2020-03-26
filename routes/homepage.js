@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     const newPerson = {
         name: req.body.name,
-        drink: 'coffee',
+        drink: 'Coffee',
         sugar: 1,
         milk: 1
     }
