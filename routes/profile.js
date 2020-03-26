@@ -9,6 +9,7 @@ router.get('/:name', (req, res) => {
     const people = data.people.find(item => item.name === name)
 
     const viewData = {
+        image: people.image,
         name: people.name,
         drink: people.drink,
         sugar: people.sugar,
