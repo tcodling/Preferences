@@ -1,0 +1,28 @@
+{
+"people": [
+    {
+        "name": "Thomas",
+        "drink": "Coffee",
+        "sugars": 1,
+        "milk": 1
+    },
+    {
+        "name": "Richard",
+        "drink": "Hot Chocolate",
+        "sugars": 2,
+        "milk": 1
+    },
+    {
+        "name": "Kim",
+        "drink": "Vodka",
+        "sugars": 5,
+        "milk": 0
+    },
+    {
+        "name": "Marni",
+        "drink": "Camomile",
+        "sugars": 0,
+        "Milk": 0
+    }
+]
+}
