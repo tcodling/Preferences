@@ -12,7 +12,7 @@ router.get('/:name', (req, res) => {
         image: people.image,
         name: people.name,
         drink: people.drink,
-        sugar: people.sugar,
+        sugar: people.sugars,
         milk: people.milk
     }
 
