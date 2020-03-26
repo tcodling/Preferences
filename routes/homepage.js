@@ -14,20 +14,21 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     const newPerson = {
         name: req.body.name,
-        drink: 'Coffee',
-        sugar: 1,
-        milk: 1
+        drink: req.body.drink,
+        sugar: req.body.sugars,
+        milk: req.body.milks
     }
     data.people.push(newPerson)
-    const dataString = JSON.stringify(data)
+    const dataString = JSON.stringify(data, null, 2)
+    console.log(dataString)
     fs.writeFile('../data.json', dataString, err => {
         if (err) {
             console.log('Error writing file', err)
         } else {
             console.log('Successfully wrote file')
+            res.redirect('/')
         }
     })
-    res.redirect('/')
 })
 
 module.exports = router
